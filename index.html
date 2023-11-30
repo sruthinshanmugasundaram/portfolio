@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sruthin's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <header id="home">
+      <video src="smoke.mp4" autoplay muted ></video>
+      <h1 id="greeting-message" class="greetingmessage"></h1>
+      <h1 class="smoke-effect">Hello, I'm Sruthin S<br>I'm a full stack developer.</h1>
+      <p>Email: sruthinsruthin70@gmail.com</p>
+      <p>Phone: +91 9488276520</p>
+      <div id="homemobileMenu" class="home-mobile-menu" onclick="toggleMenu()">&#9776; Menu</div>
+
+<nav class="homenav-list">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technical-skills">Technical Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#blog">Blog</a></li>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+        var navList = document.querySelector('.homenav-list');
+        navList.classList.toggle('show');
+    }
+</script>
+    </header>
+  <main>
+    <div class="skills-wrapper flex row-gt-sm">
+        <!-- Left Side -->
+        <div class="flex flex-50-gt-sm waypoint" style="display: flex;align-items: center;justify-content: center;text-align: center;">
+            <div class="profile-image" style="width: 150px; height: 130px; border-radius: 40%; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+                <img src="sruthin 1.png" alt="Your Name" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            
+              
+            <div class="label bold">Who's this guy?</div>
+            <div>
+                I'm a Full-Stack Developer from
+                <a class="highlight" href="https://skill-lync.com/" target="_blank">Skill-lync</a>
+                in Chennai.
+                <br />
+                I have a serious passion for UI effects, animations, and creating intuitive, dynamic user experiences, back-end development and java programming.
+                <br />
+                <span class="page-link highlight" dest="contact">Let's make something special.</span>
+            </div>
+        </div>
+
+        <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="bar flex">
+                <div class="bar fill" style="width:90%">
+                  <div class="tag bold flex">Core Java</div>
+                </div>
+                <span>90%</span>
+              </div>
+              <div class="bar flex">
+            <div class="bar fill" style="width:90%">
+              <div class="tag bold flex">UI Design</div>
+            </div>
+            <span>90%</span>
+          </div>
+          <div class="bar flex">
+            <div class="bar fill" style="width:90%">
+              <div class="tag bold flex">HTML</div>
+            </div>
+            <span>90%</span>
+          </div>
+          <div class="bar flex">
+            <div class="bar fill" style="width:90%">
+              <div class="tag bold flex">CSS</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:85%">
+              <div class="tag bold flex">SQL & NoSQL</div>
+            </div>
+            <span>85%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:80%">
+              <div class="tag bold flex">JavaScript</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:65%">
+              <div class="tag bold flex">Node.js</div>
+            </div>
+            <span>65%</span>
+          </div>
+          
+          
+          <div class="bar flex">
+            <div class="bar fill" style="width:65%">
+              <div class="tag bold flex">Python</div>
+            </div>
+            <span>65%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:50%">
+              <div class="tag bold flex">Reactjs</div>
+            </div>
+            <span>50%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:50%">
+              <div class="tag bold flex">C Language</div>
+            </div>
+            <span>50%</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Your other sections go here -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="wrapper">
+            <nav class="nav-list">
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776; Sections</div>
+                <ul>
+                    <li class="dropdown" id="fullstack-dropdown">
+                        <a href="#fullstack" class="active">Full Stack</a>
+                        <div class="dropdown-content">
+                            <a href="#ebank">E-bank Project</a>
+                            <a href="#ecommerce">E-Commerce Website</a>
+                            <a href="#ecommercedb">E-Commerce Database</a>
+                            <a href="#bankapi">Bank API</a>
+                        </div>
+                    </li>
+                    <li class="dropdown" id="clgproject-dropdown">
+                        <a href="#clgproject">College Projects</a>
+                        <div class="dropdown-content">
+                            <a href="#mainproject">Main Project</a>
+                            <a href="#miniproject">Mini Project</a>
+                        </div>
+                    </li>
+                    <li class="dropdown" id="internproject-dropdown">
+                        <a href="#internproject">Intern-projects</a>
+                        <div class="dropdown-content">
+                            <a href="#embedproject">Embed Project</a>
+                            <a href="#automaticstreetlight">Automatic Street Light</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+  
+          <section id="fullstack" class="section active" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px; border-radius: 8px;">
+            <h2 class="section-title" style="color: #2d3e50; text-align: center; margin-bottom: 15px;">Full Stack Development</h2>
+            <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 10px;text-align: justify;">Welcome to the Full Stack Development section where innovation meets technology to create seamless and cutting-edge solutions. In this realm, we explore a diverse range of projects that showcase the integration of front-end and back-end technologies to deliver comprehensive and user-centric applications.</p>
+        
+            <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 10px;text-align: justify;">Our projects cover a spectrum of technologies, from the foundational aspects of HTML, CSS, and JavaScript on the front end, to the robustness of server-side technologies such as Node.js and Python on the back end. This intersection of skills enables us to craft solutions that not only meet industry standards but also push the boundaries of what's possible in the digital landscape.</p>
+        
+            <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 10px;text-align: justify;">Whether you are interested in building responsive and intuitive user interfaces or designing scalable and efficient server-side logic, our Full Stack Development projects provide insights into the intricacies of creating end-to-end solutions. Dive into the details of each project below and witness the journey of revolutionizing the digital experience.</p>
+        
+            <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 10px;text-align: justify;">Feel free to explore the projects in this section, each representing a unique facet of Full Stack Development, and discover the innovations that drive modern web applications.</p>
+        </section>
+        
+        
+          
+  
+          <section id="ebank" class="section">
+              <!-- Content for E-bank Project -->
+              <h3>E-bank Project</h3>
+            <p class="project-info">Intern Project | Feb to March 2023 | Skill Lync</p>
+            <p class="project-info">Revolutionizing Banking with Seamless Digital Transactions</p>
+  
+            <div class="project-description">
+              <p style="text-align: justify;">Embark on a journey into the future of banking with our innovative "E-bank Project," developed during the internship period from February to March 2023 at Skill Lync. This project aimed to enhance user experience and streamline financial operations by providing convenient account access.</p>
+              
+              <p>Key Features:</p>
+              <ul>
+                <li style="text-align: justify;"><strong>Convenient Access:</strong> Users can easily access their accounts for various financial transactions.</li>
+                <li style="text-align: justify;"><strong>Balance Checks:</strong> Instantly check account balances for better financial planning.</li>
+                <li style="text-align: justify;"><strong>Fund Transfers:</strong> Seamlessly transfer funds between accounts for hassle-free transactions.</li>
+                <li style="text-align: justify;"><strong>Account Management:</strong> Empower users to manage their accounts efficiently.</li>
+              </ul>
+              
+              
+              <p style="text-align: justify;">This project leverages cutting-edge technologies to ensure a secure, user-friendly, and efficient banking experience. The intuitive interface provides a smooth navigation experience for users of all levels of technological familiarity.</p>
+          
+              <!-- GitHub Link -->
+              <p>GitHub Repository: <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects/tree/main/java%20projects" target="_blank">E-bank Project on GitHub</a></p>
+            </div>
+      
+            <div class="project-images">
+              <img src="e_bank_project_image.jpg" alt="E-bank Project">
+            </div>
+          </section>
+  
+          <section id="ecommerce" class="section">
+              <h3>E-Commerce Website</h3>
+            <p class="project-info">Intern Project | April to May 2023 | Skill Lync</p>
+            <p class="project-info">Crafting a Seamless Online Shopping Experience</p>
+        
+            <div class="project-description">
+                <p style="text-align: justify;">Dive into the world of online commerce with our E-Commerce Website project, developed during the internship period from April to May 2023 at Skill Lync. This project focuses on delivering a user-friendly experience with an intuitive interface, offering various features to enhance the online shopping journey.</p>
+        
+                <p>Key Features:</p>
+                <ul>
+                    <li style="text-align: justify;"><strong>Home Page:</strong> A welcoming and informative entry point for users.</li>
+                    <li style="text-align: justify;"><strong>Cart and Wishlist:</strong> Efficient management of selected items and desired products.</li>
+                    <li style="text-align: justify;"><strong>User Profiles:</strong> Personalized user accounts for a tailored shopping experience.</li>
+                    <li style="text-align: justify;"><strong>Product Pages:</strong> Comprehensive information and imagery for each product.</li>
+                </ul>
+        
+                <p style="text-align: justify;">This project is a blend of HTML, CSS, and JavaScript, providing a dynamic and visually appealing platform for users. It showcases a responsive design, ensuring accessibility across various devices for a seamless shopping experience.</p>
+            </div>
+        
+            <div class="project-images">
+                <img src="e_commerce_website_image.png" alt="E-Commerce Website">
+            </div>
+        
+            <!-- GitHub Link -->
+            <p>GitHub Repository: <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects/tree/main/FrontEnd%20E-commerce%20project/challenge-11" target="_blank">E-Commerce Website on GitHub</a></p>
+          </section>
+  
+          <section id="ecommercedb" class="section">
+            <h3>E-Commerce Database</h3>
+            <p class="project-info">Intern Project | June to July 2023 | Skill Lync</p>
+            <p class="project-info">Optimizing Data Management for E-Commerce</p>
+        
+            <div class="project-description">
+                <p style="text-align: justify;">Explore the intricacies of data management in the realm of e-commerce with our E-Commerce Database project, undertaken during the internship period from June to July 2023 at Skill Lync. This project focuses on efficiently handling data for an e-commerce application, utilizing a hybrid SQL and NoSQL database system with Redis caching.</p>
+        
+                <p>Key Contributions:</p>
+                <ul>
+                    <li style="text-align: justify;"><strong>Hybrid Database System:</strong> Utilized both SQL and NoSQL databases for optimal data organization.</li>
+                    <li style="text-align: justify;"><strong>Redis Caching:</strong> Implemented Redis caching for faster retrieval of frequently accessed data.</li>
+                    <li style="text-align: justify;"><strong>Scalability:</strong> Designed the database system to scale with the growing needs of the e-commerce platform.</li>
+                </ul>
+        
+                <p style="text-align: justify;">This project aims to enhance the performance and scalability of an e-commerce application by implementing a robust database architecture. The combination of SQL and NoSQL databases, along with Redis caching, ensures efficient handling of diverse data types and rapid access to critical information.</p>
+            </div>
+        
+            <div class="project-images">
+                <div class="image-container">
+                    <img src="sql_database_image.png" alt="SQL Database">
+                    <p>SQL Database</p>
+                </div>
+                <div class="image-container">
+                    <img src="nosql_database_image.jpg" alt="NoSQL Database">
+                    <p>NoSQL Database</p>
+                </div>
+            </div>
+        
+            <!-- GitHub Link -->
+            <p>GitHub Repository: <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects/tree/main/back%20end%20projects" target="_blank">E-Commerce Database on GitHub</a></p>
+        </section>
+        
+  
+        <section id="bankapi" class="section">
+          <h3>Bank API</h3>
+          <p class="project-info">Intern Project | Sep to Oct 2023 | Skill Lync</p>
+          <p class="project-info">Revolutionizing Banking with Microservices</p>
+      
+          <div class="project-description">
+              <p  style="text-align: justify;">Dive into the world of microservices architecture with our Bank API project, developed during the internship period from September to October 2023 at Skill Lync. This project is a testament to modernizing banking systems by creating a microservices-based solution with Docker containerization.</p>
+      
+              <p>Key Features:</p>
+              <ul>
+                  <li style="text-align: justify;"><strong>Microservices System:</strong> Designed and implemented microservices for various banking functionalities.</li>
+                  <li style="text-align: justify;"><strong>Docker Containerization:</strong> Utilized Docker for containerizing microservices, ensuring portability and scalability.</li>
+                  <li style="text-align: justify;"><strong>API Coverage:</strong> Encompassed accounts, cards, loans, and insurance APIs for comprehensive banking services.</li>
+                  <li style="text-align: justify;"><strong>Testing with Postman:</strong> Employed Postman for thorough testing and validation of the API endpoints.</li>
+              </ul>
+      
+              <p style="text-align: justify;">This project aims to reshape the traditional banking landscape by introducing a microservices-based approach. The use of Docker ensures easy deployment and scalability, while the comprehensive API coverage provides a robust foundation for diverse banking operations.</p>
+          </div>
+      
+          <div class="project-images">
+              <div class="image-container">
+                  <img src="loan_postman_image.png" alt="Loan Postman">
+                  <p>Loan Postman</p>
+              </div>
+              <div class="image-container">
+                  <img src="insurance_postman_image.png" alt="Insurance Postman">
+                  <p>Insurance Postman</p>
+              </div>
+              <div class="image-container">
+                  <img src="edureka_server_image.png" alt="Edureka Server">
+                  <p>Edureka Server</p>
+              </div>
+              <div class="image-container">
+                  <img src="docker_image.png" alt="Docker">
+                  <p>Docker</p>
+              </div>
+          </div>
+      
+          <!-- GitHub Link -->
+          <p>GitHub Repository: <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects/tree/main/microservices%20projects" target="_blank">Bank API on GitHub</a></p>
+      </section>
+      
+  
+      <section id="clgproject" class="section" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px; border-radius: 8px;">
+        <!-- Content for College Projects section -->
+        <h2 class="section-title" style="color: #2d3e50; text-align: center; margin-bottom: 15px;">College Projects</h2>
+        <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 20px;text-align: justify;">
+            Delve into the realm of innovation and academic excellence with our College Projects section. These projects showcase the application of theoretical knowledge in real-world scenarios, demonstrating creativity, problem-solving skills, and technical prowess.
+        </p>
+          </section>
+  
+          <section id="mainproject" class="section">
+            <h3>Machine Failure Prediction using ML Algorithm</h3>
+            <p class="project-info">Main project Feb to June 2023 MNMJEC</p>
+            <p class="project-info" style="text-align: justify;">Developed machine lifespan and failure prediction using Python and advanced ML algorithms.</p>
+            <div class="project-image">
+                <img src="machine_failure_image.jpg" alt="Machine Failure Prediction">
+            </div>
+            <!-- Project 1 Description -->
+            <div class="project-description">
+                <h3>Project Description:</h3>
+                <p style="text-align: justify;">Machine Failure, or Equipment Failure, is any event in which a piece of industrial machinery underperforms, whether entirely or partially, or stops functioning in the way in which it was intended to. This project, conducted from February to June 2023 at MNMJEC, focuses on predicting machine failure using advanced Machine Learning (ML) algorithms.</p>
+                <p style="text-align: justify;">The algorithms employed in this project include logistic regression, support vector machine, decision tree, and naive bayes, offering a comprehensive approach to failure prediction.</p>
+                <p style="text-align: justify;">Keywords: Machine Failure, Machine Learning, classification</p>
+            </div>
+            <!-- Project 1 Additional Images -->
+            <div class="project-images">
+                <img src="Output1.png" alt="Output Screenshot">
+                <img src="hardwarekit.png" alt="Hardware Kit">
+            </div>
+            <!-- Project 1 Abstract -->
+            <div class="project-abstract">
+                <h3>Abstract:</h3>
+                <p style="text-align: justify;">Machine failure in industrial settings can lead to significant consequences, including loss of asset availability, deviation from standard procedure, and financial losses. This project addresses these challenges by utilizing data mining and machine learning techniques to predict and prevent machine failure.</p>
+                <p style="text-align: justify;">The project involves the comparison of different ML algorithms, such as logistic regression, support vector machine, decision tree, and naive bayes, to determine the most effective model for predicting machine failure.</p>
+            </div>
+            
+            <!-- Project 1 Proposed System -->
+            <div class="project-proposed-system">
+                <h3>Description:</h3>
+                <p style="text-align: justify;">The proposed system aims to build a machine learning model for predicting machine failure. It involves collecting and preprocessing the dataset, analyzing and training the data using machine learning algorithms, and deploying the best model for prediction. The advantages of the proposed system include the implementation of machine learning, accuracy prediction, and live testing.</p>
+            </div>
+            
+            <!-- Project 1 Dataset Preparation -->
+            <div class="project-dataset-preparation">
+                <h3>Preparing the Dataset:</h3>
+                <p style="text-align: justify;">This dataset contains 100010 records of data, with the target column having three classifications. The dataset undergoes data pre-processing, including validation techniques, to ensure an unbiased evaluation of the machine learning model.</p>
+            </div>
+            <!-- Project 1 Module Descriptions -->
+            <div class="project-module-descriptions">
+                <!-- Data Pre-processing -->
+                <h3>Data Pre-processing:</h3>
+                <p style="text-align: justify;">Validation techniques in machine learning are employed to get the error rate of the ML model. This involves dealing with samples of data that may not be a true representative of the population. The dataset is validated, missing values are addressed, and unwanted data is removed.</p>
+                <!-- Support Vector Machine -->
+                <h3>Support Vector Machine:</h3>
+                <p style="text-align: justify;">Support Vector Machine (SVM) is a popular supervised learning algorithm used for both classification and regression. In this project, SVM is applied to create the best decision boundary for segregating n-dimensional space into classes, aiding in machine failure prediction.</p>
+                <!-- Decision Tree Classifier -->
+                <h3>Decision Tree Classifier:</h3>
+                <p style="text-align: justify;">Decision Tree is a versatile supervised learning technique used for classification problems. It involves creating a tree-structured classifier where internal nodes represent features, branches represent decision rules, and leaf nodes represent outcomes. Decision trees are employed to enhance machine failure prediction.</p>
+            </div>
+            <!-- Project 1 Conclusion -->
+            <div class="project-conclusion">
+                <h3>Conclusion:</h3>
+                <p style="text-align: justify;">The analytical process started from data cleaning and processing, missing value handling, exploratory analysis, and concluded with model building and evaluation. The project provides a robust solution for predicting machine failure, leveraging the power of machine learning algorithms.</p>
+                <p style="text-align: justify;">The accuracy achieved in live testing demonstrates the effectiveness of the proposed system in predicting machine failure and preventing potential industrial setbacks.</p>
+            </div>
+            <p>GitHub Repository: <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects/tree/main/microservices%20projects" target="_blank">Main Project on GitHub</a></p>
+        </section>
+        
+  
+          <section id="miniproject" class="section" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px; border-radius: 8px;">
+            <h3 class="section-title" style="color: #2d3e50; text-align: center; margin-bottom: 15px;">Voice Controlling Robot</h3>
+            
+            <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 20px;text-align: justify;">
+                Embark on an interactive journey with our innovative "Voice Controlling Robot" project, crafted during the mini project period from March to May 2022 at MNMJEC. This project introduces the revolutionary Burnon app, connecting an Arduino board and Python language, compiled by Proteus software. The app provides an intuitive interface for controlling the robot through voice commands, exploring the future of human-machine interaction with this cutting-edge mini project.
+            </p>
+        
+            <!-- Detailed Project Description -->
+            <div class="project-description">
+                <h3>Group Members:</h3>
+                <ul>
+                    <li>Dharanidharan K.C</li>
+                    <li>Sruthin S</li>
+                    <li>Gokul Raj S</li>
+                </ul>
+        
+                <h3>Description:</h3>
+                <p style="text-align: justify;">In this scientific report, a system is developed focusing on using human voice to operate a robot. The voice-controlled robot is an example of controlling the motions of a simple robot using commonly used voice commands. An android app is utilized to transmit human commands to the microcontroller. The UART protocol is used to connect a controller to a Bluetooth module. The android app receives the speech, processes it, and transforms the voice to text.</p>
+        
+                <p style="text-align: justify;">Step 1: The microcontroller processes this text and takes appropriate action to control the robot.</p>
+                <p style="text-align: justify;">Step 2: The goal is to create a robotic car that can be controlled by human voice for basic movements like going forward and turning left or right.</p>
+        
+                <p style="text-align: justify;">The ATmega Arduino board is the Hardware Development board utilized in this project. The software is written in the Arduino IDE with Embedded C. Hardware has been installed, and software has been ported.</p>
+        
+                <p style="text-align: justify;">After a large number of tests, it was concluded that there is a simple and effective technique to manipulate robots using human voice. This ergonomic technique for robotic application simplicity provides excellent assistance while executing several duties.</p>
+            </div>
+        
+            <!-- Additional Project Images -->
+            <div class="project-image">
+              <img src="voice_controlling_robot_image.jpg" alt="Voice Controlling Robot">
+          </div>
+        
+            <!-- Arduino Based Voice Controlled Robot Vehicle -->
+            <h3>Arduino Based Voice Controlled Robot Vehicle</h3>
+        
+            <h4>Introduction:</h4>
+            <p style="text-align: justify;">Our goal is to create a robot car that can be operated by a person's voice command. This system, a prototype of our design, utilizes an Android application with a microcontroller. Bluetooth technology facilitates the connection between the application and the robot. The commands are passed via the channel to the module, which receives them. The voice-controlled robotic vehicle (VCRV) listens to and responds to the user's commands, requiring accent training for the gadget to grasp the commands given.</p>
+        
+            <h4>Principles:</h4>
+            <p style="text-align: justify;">Arduino is a microcontroller or a little computer. It lacks the necessary processing power and capabilities to perform speech recognition. However, the PCB board features a connection for connecting a Bluetooth module. This allows the Arduino to connect to other gadgets wirelessly. The Android app conducts "Speech to Text" operations using Google API and then sends commands to Arduino through Bluetooth after getting the text.</p>
+        
+            <h4>Improvements:</h4>
+            <p style="text-align: justify;">The project "Voice Controlled Robotic Vehicle" has numerous uses both now and in the future. In the future, improvements can be added to make it more effective. The project has a wide range of applications, including military, home security, rescue missions, industry, and medical support. The project is simple to implement and advantageous to human life, especially for monitoring and assisting disabled persons.</p>
+        </section>
+        
+  
+        <section id="internproject" class="section">
+          <!-- Content for Intern-projects section -->
+          <h3>Intern-projects</h3>
+          <p style="text-align: justify;">Embark on a journey of technological exploration through our intern projects, where innovation meets practical application. These projects showcase the ingenuity and dedication of our interns in tackling real-world challenges and contributing to advancements in robotics and smart city solutions.</p>
+      
+          <!-- Obstacles Avoiding Robots Project -->
+        
+      </section>
+      
+  
+          <section id="embedproject" class="section">
+            <h3>Obstacles Avoiding Robots</h3>
+            <p>Intern Project Oct to Dec 2021 VERZEO</p>
+            <p style="text-align: justify;">Embark on a journey into the realm of robotics innovation with the "Obstacles Avoiding Robots" project, undertaken during the internship from October to December 2021 at VERZEO. This project involves the design and implementation of intelligent robots equipped with obstacle avoidance capabilities, contributing to enhanced automation and safety in various applications.</p>
+            <div class="project-image">
+                <img src="obstacle_avoiding_robots_image.jpg" alt="Obstacles Avoiding Robots">
+            </div>
+            <!-- Project Description -->
+            <div class="project-description">
+                <h3>Project Description:</h3>
+                <p style="text-align: justify;">The project focuses on creating robots with intelligent obstacle avoidance mechanisms, ensuring their ability to navigate diverse environments safely. The implementation utilizes Keil and Proteus software to design and simulate the robots, allowing for a comprehensive understanding of their functionality before physical deployment.</p>
+                <p style="text-align: justify;">The intelligent robots are engineered to detect obstacles in their path and autonomously navigate around them, enhancing efficiency and safety in environments where automated obstacle avoidance is crucial.</p>
+            </div>
+            <!-- Project Objectives -->
+            <div class="project-objectives">
+                <h3>Project Objectives:</h3>
+                <ul>
+                    <li style="text-align: justify;">Design and implement robots with obstacle avoidance capabilities.</li>
+                    <li style="text-align: justify;">Utilize Keil and Proteus software for simulation and testing.</li>
+                    <li style="text-align: justify;">Enhance automation in various applications through intelligent robotics.</li>
+                    <li style="text-align: justify;">Ensure safety by enabling autonomous obstacle detection and avoidance.</li>
+                </ul>
+            </div>
+            <!-- Project Significance -->
+            <div class="project-significance">
+                <h3>Significance of the Project:</h3>
+                <p style="text-align: justify;">The "Obstacles Avoiding Robots" project holds significant importance in the field of robotics and automation. By integrating intelligent obstacle avoidance, the robots contribute to improved safety and efficiency in diverse applications, including industrial automation, surveillance, and exploration.</p>
+                <p style="text-align: justify;">The project aligns with the growing demand for automation solutions that prioritize safety and precision, making it a valuable contribution to the field of robotics.</p>
+            </div>
+            <!-- Project Technologies -->
+            <div class="project-technologies">
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Keil Software</li>
+                    <li>Proteus Software</li>
+                    
+                </ul>
+            </div>
+            <!-- Project Achievements -->
+            <div class="project-achievements">
+                <h3>Project Achievements:</h3>
+                <p style="text-align: justify;">The successful implementation of intelligent robots with obstacle avoidance capabilities marks a significant achievement in the project. The robots demonstrate their ability to navigate complex environments autonomously, showcasing the potential for widespread application in industries that prioritize automation and safety.</p>
+                <p style="text-align: justify;">The project's outcomes contribute to the advancement of robotics technology and its practical implementation in real-world scenarios.</p>
+            </div>
+        </section>
+        
+  
+        <section id="automaticstreetlight" class="section">
+          <!-- Content for Automatic Street Light -->
+          <h3>Automatic Street Light Control System</h3>
+          <p>Intern Project Jan to Mar 2022 in Verzeo</p>
+          <p style="text-align: justify;">Illuminate the path to innovation with the "Automatic Street Light Control System" project, undertaken during the internship from January to March 2022 at [Your Organization]. This project focuses on designing an intelligent and energy-efficient street lighting system that responds dynamically to ambient light conditions, enhancing safety and energy conservation in urban environments.</p>
+          <div class="project-image">
+              <img src="automaticstreetlight.png" alt="Automatic Street Light Control System">
+          </div>
+          <!-- Project Description -->
+          <div class="project-description">
+              <h3>Project Description:</h3>
+              <p style="text-align: justify;">The Automatic Street Light Control System is a sophisticated solution aimed at optimizing energy consumption and improving safety in urban areas. The project involves the design and implementation of a smart street lighting system that automatically adjusts the intensity of streetlights based on ambient light levels.</p>
+              <p>Key features of the system include:</p>
+              <ul>
+                  <li style="text-align: justify;">Automatic adjustment of streetlight intensity based on ambient light conditions.</li>
+                  <li style="text-align: justify;">Integration of sensors to detect changes in natural light levels.</li>
+                  <li style="text-align: justify;">Energy-efficient operation, reducing power consumption during daylight hours.</li>
+                  <li style="text-align: justify;">Enhanced safety by ensuring optimal illumination during low-light conditions.</li>
+              </ul>
+          </div>
+          <!-- Project Objectives -->
+          <div class="project-objectives">
+              <h3>Project Objectives:</h3>
+              <ul>
+                  <li style="text-align: justify;">Design an intelligent street lighting control system.</li>
+                  <li style="text-align: justify;">Implement sensors for real-time detection of ambient light levels.</li>
+                  <li style="text-align: justify;">Develop algorithms for automatic adjustment of streetlight intensity.</li>
+                  <li style="text-align: justify;">Contribute to energy conservation and sustainability in urban environments.</li>
+              </ul>
+          </div>
+          <!-- Project Significance -->
+          <div class="project-significance">
+              <h3>Significance of the Project:</h3>
+              <p style="text-align: justify;">The Automatic Street Light Control System addresses the pressing need for energy-efficient and smart solutions in urban infrastructure. By dynamically adjusting streetlight intensity based on ambient light, the system not only conserves energy but also enhances safety by ensuring optimal illumination during varying lighting conditions.</p>
+              <p style="text-align: justify;">The project aligns with the principles of smart cities, contributing to sustainable and intelligent urban development.</p>
+          </div>
+          <!-- Project Technologies -->
+          <div class="project-technologies">
+              <h3>Technologies Used:</h3>
+              <ul>
+                  <li style="text-align: justify;">Microcontroller (Specify the model, e.g., Arduino, Raspberry Pi)</li>
+                  <li style="text-align: justify;">Ambient Light Sensors</li>
+                  <li style="text-align: justify;">LED Lighting System</li>
+                  <li style="text-align: justify;">Programming Languages (Specify, e.g., C, Python)</li>
+                  <!-- Add additional technologies as needed -->
+              </ul>
+          </div>
+          <!-- Project Achievements -->
+          <div class="project-achievements">
+              <h3>Project Achievements:</h3>
+              <p style="text-align: justify;">The successful implementation of the Automatic Street Light Control System demonstrates a significant achievement in the realm of smart city solutions. The system's ability to intelligently adjust streetlight intensity contributes to energy conservation and urban safety, marking a step towards sustainable and efficient urban infrastructure.</p>
+              <p style="text-align: justify;">The project showcases the potential for widespread implementation of smart lighting systems in cities, promoting a greener and safer urban environment.</p>
+          </div>
+      </section>
+      
+        </section>
+        
+      
+        <section id="technical-skills" >
+          <h2>Technical Skills</h2>
+          <div class="skills-wrapper">
+              <div class="flex-50-gt-sm">
+                  <div class="waypoint">
+                      <img src="core_java_logo.jpeg" alt="Core Java Logo" class="me">
+                      <h3 class="label">Core Java</h3>
+                      <p>Expert in Core Java programming, with a focus on robust and scalable applications. Proficient in backend development and standalone applications.</p>
+                  </div>
+              </div>
+      
+              <div class="flex-50-gt-sm">
+                  <div class="waypoint">
+                      <img src="full_stack_logo.png" alt="Full-Stack Developer Logo" class="me">
+                      <h3 class="label">Full-Stack Developer</h3>
+                      <p>Versatile Full-Stack Developer skilled in frontend and backend technologies. Experienced in designing end-to-end solutions, ensuring seamless user experiences and efficient server-side operations.</p>
+                  </div>
+              </div>
+      
+              <div class="flex-50-gt-sm">
+                  <div class="waypoint">
+                      <img src="python_logo.jpg" alt="Python Logo" class="me">
+                      <h3 class="label">Python Language</h3>
+                      <p>Proficient in Python programming, focusing on web development, automation, and data analysis. Experience with Python frameworks like Django and Flask for scalable applications.</p>
+                  </div>
+              </div>
+      
+              <div class="flex-50-gt-sm">
+                  <div class="waypoint">
+                      <img src="c_language_logo.png" alt="C Language Logo" class="me">
+                      <h3 class="label">C Language</h3>
+                      <p>Strong foundation in C programming, specializing in system-level programming and algorithm design. Experience in creating efficient solutions for various applications.</p>
+                  </div>
+              </div>
+      
+              <div class="flex-50-gt-sm">
+                  <div class="waypoint">
+                      <img src="embedded_programming_logo.jpg" alt="Embedded Programming Logo" class="me">
+                      <h3 class="label">Embedded Programming</h3>
+                      <p>Expert in embedded systems programming, ensuring seamless integration of software with hardware. Experience in developing firmware for embedded devices, optimizing performance in resource-constrained environments.</p>
+                  </div>
+              </div>
+              <div class="flex-50-gt-sm">
+                <div class="waypoint">
+                    <img src="machine_learning_logo.jpg" alt="Machine Learning Logo" class="me">
+                    <h3 class="label">Machine Learning</h3>
+                    <p>Proficient in machine learning, a field of artificial intelligence that focuses on developing algorithms and models that enable computers to learn from data and make predictions or decisions. Skilled in data preprocessing, feature engineering, and training various machine learning models.</p>
+                </div>
+            </div>
+           
+          </div>
+      </section>
+      
+      
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <nav class="nav-menu">
+        <ul>
+            <li><a href="#fullstack-development">Full Stack Development</a></li>
+            <li><a href="#python-programming">Python Programming</a></li>
+            <li><a href="#embedded-systems">Embedded Systems</a></li>
+            <li><a href="#machine-learning">Machine Learning</a></li>
+        </ul>
+    </nav>
+      
+        <h3 id="fullstack-development">Full Stack Development</h3>
+        <div class="certificate-images">
+            <div class="certificate-image java">
+                <img src="java intern cert.jpg" alt="Java Intern Certificate">
+                <p class="label">Java Intern - Skill Lync</p>
+            </div>
+            <div class="certificate-image frontend">
+                <img src="front end.jpg" alt="Front End Certificate">
+                <p class="label">Front End - Skill Lync</p>
+            </div>
+            <div class="certificate-image database">
+                <img src="database certificate.jpg" alt="Database Certificate">
+                <p class="label">Database - Skill Lync</p>
+            </div>
+            <div class="certificate-image microservices">
+                <img src="micro services.jpg" alt="Microservices Certificate">
+                <p class="label">Microservices - Skill Lync</p>
+            </div>
+        </div>
+          <!-- Python Programming Certificates -->
+    <h3 id="python-programming">Python Programming</h3>
+    <div class="certificate-images">
+        <div class="certificate-image python">
+            <img src="python.png" alt="Python for Data Science Certificate">
+            <p class="label">Python for Data Science - NPTEL</p>
+        </div>
+        <div class="certificate-image python-internshalla">
+            <img src="python-internshalla.png" alt="Introduction of Python Certificate">
+            <p class="label">Introduction of Python - Internshala</p>
+        </div>
+    </div>
+
+    <!-- Embedded Systems Certificates -->
+    <h3 id="embedded-systems">Embedded Systems</h3>
+    <div class="certificate-images">
+        <div class="certificate-image embedded">
+            <img src="embedded.png" alt="Embedded Systems Certificate">
+            <p class="label">Embedded Systems - Verzeo</p>
+        </div>
+    </div>
+
+    <!-- Machine Learning Certificates -->
+    <h3 id="machine-learning">Machine Learning</h3>
+    <div class="certificate-images">
+          <div class="certificate-image machine">
+              <img src="machinelearning.png" alt="Machine Learning Certificate">
+              <p class="label">Machine Learning - Guvi</p>
+          </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  
+
+<section id="interests" style="text-align: center;">
+  <style>
+      .interests-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+      }
+
+      .interest {
+          position: relative;
+          width: 150px; /* Adjust the width as needed */
+          margin: 10px;
+      }
+
+      .interest img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      }
+
+      .interest h3,
+      .interest p {
+          margin: 5px 0;
+      }
+
+      .interest p {
+          font-size: 10px; /* Adjust the font size as needed */
+      }
+  </style>
+
+  <h2>Area of Interest</h2>
+  <div class="interests-container">
+      <!-- Software Developer -->
+      <div class="interest">
+          <img src="software_developer_logo.jpg" alt="Software Developer Logo">
+          <h3>Software Dev</h3>
+          <p>Innovative software solutions. Proficient in various languages.</p>
+      </div>
+
+      <!-- Full Stack Developer -->
+      <div class="interest">
+          <img src="full_stack_developer_logo.jpg" alt="Full Stack Developer Logo">
+          <h3>Full Stack</h3>
+          <p>Front-end and back-end development. Responsive web applications.</p>
+      </div>
+
+      <!-- Electronics Engineering -->
+      <div class="interest">
+          <img src="electronics_engineering_logo.jpg" alt="Electronics Engineering Logo">
+          <h3>Electronics</h3>
+          <p>Principles of electronics engineering. Circuit design and implementation.</p>
+      </div>
+
+      <!-- Embedded Systems -->
+      <div class="interest">
+          <img src="embedded_systems_logo.png" alt="Embedded Systems Logo">
+          <h3>Embedded Systems</h3>
+          <p>World of embedded systems. Software development for embedded devices.</p>
+      </div>
+  </div>
+</section>
+
+
+
+
+    <section id="education" onclick="toggleEducationDetails()">
+      <h2>Education</h2>
+      <div id="education-details">
+  
+      <div class="tab-container">
+          <div class="tab" onclick="openTab('bachelors')">Bachelors</div>
+          <div class="tab" onclick="openTab('hsc')">HSC</div>
+          <div class="tab" onclick="openTab('sslc')">SSLC</div>
+      </div>
+  
+      <!-- Bachelors Content -->
+      <div class="tab-content" id="bachelors">
+          <div class="education">
+              <img src="college_image.jpg" alt="College Image">
+              <div class="details">
+                  <h3>B.E. Electronics and Communication</h3>
+                  <p>Misrimal Navajee Munoth Jain Engineering College, Chennai</p>
+                  <p>CGPA: 8.09 | Passed-out year: Aug 2019 – June 2023</p>
+              </div>
+          </div>
+      </div>
+  
+      <!-- HSC Content -->
+      <div class="tab-content" id="hsc">
+          <div class="education">
+              <img src="school_image.png" alt="School Image">
+              <div class="details">
+                  <h3>12th Standard</h3>
+                  <p>Lions Matriculation Higher Secondary School, Erode</p>
+                  <p>Percentage: 70.80% | Passed-out year: March 2019</p>
+                  <p>Subjects: Tamil, English, Mathematics, Physics, Chemistry, Computer Science</p>
+              </div>
+          </div>
+      </div>
+  
+      <!-- SSLC Content -->
+      <div class="tab-content" id="sslc">
+          <div class="education">
+              <img src="school_image.png" alt="School Image">
+              <div class="details">
+                  <h3>10th Standard</h3>
+                  <p>Lions Matriculation Higher Secondary School, Erode</p>
+                  <p>Percentage: 87.60% | Passed-out year: March 2017</p>
+                  <p>Subjects: Tamil, English, Mathematics, Science, Social Science</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  
+
+    <script src="script.js"></script>
+
+    <section id="blog">
+      <h2>Blog</h2>
+  
+      <div class="card-container">
+  
+        <div class="card">
+          <img src="blog_image1.jpg" alt="Blog Image 1">
+          <div class="card-content">
+            <h3>Exploring the Wonders of Nature</h3>
+            <p>Join us on an exciting journey as we explore the breathtaking wonders of nature. From lush forests to majestic mountains, discover the beauty that surrounds us.</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img src="blog_image2.jpg" alt="Blog Image 2">
+          <div class="card-content">
+            <h3>The Art of Photography</h3>
+            <p>Learn the secrets behind capturing stunning moments through the lens. We'll delve into photography techniques, composition, and share tips from seasoned photographers.</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img src="blog_image3.jpg" alt="Blog Image 1">
+          <div class="card-content">
+              <h3>Exploring the World of Artificial Intelligence</h3>
+              <p>Dive into the fascinating realm of Artificial Intelligence (AI). Uncover the latest advancements, applications, and ethical considerations surrounding AI technology.</p>
+          </div>
+      </div>
+      
+      <div class="card">
+          <img src="blog_image4.jpg" alt="Blog Image 3">
+          <div class="card-content">
+              <h3>Culinary Delights: A Journey Through Global Cuisine</h3>
+              <p>Embark on a gastronomic adventure as we explore diverse cuisines from around the world. Discover unique recipes, cooking tips, and the cultural significance of different dishes.</p>
+          </div>
+      </div>
+  
+      </div>
+  
+    </section>
+
+    <section class="contactform">
+      <h2>Contact Form</h2>
+      <form id="recruiterForm">
+          <label for="companyName">Company Name:</label>
+          <input type="text" id="companyName" name="companyName" required>
+
+          <label for="contactDetails">Contact Details:</label>
+          <input type="text" id="contactDetails" name="contactDetails" required>
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+
+          <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+
+  </section>
+    </main>
+    <footer>
+      <div class="icon-wrap">
+          <a href="https://www.linkedin.com/in/sruthin-s-b87b59223">
+              <div class="flex icon" id="icon-2">
+                <iconify-icon icon="circum:linkedin"></iconify-icon>
+              </div>
+          </a>
+          <a href="https://www.facebook.com/matthew.williams.351">
+              <div class="flex icon" id="icon-3">
+                <iconify-icon icon="ant-design:facebook-outlined"></iconify-icon>
+              </div>
+          </a>
+          <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects">
+              <div class="flex icon" id="icon-4">
+                <iconify-icon icon="el:github-text"></iconify-icon>
+              </div>
+          </a>
+          <a href="https://www.instagram.com/darkknight180/">
+              <div class="flex icon" id="icon-5">
+                  <iconify-icon icon="mdi:instagram"></iconify-icon>
+              </div>
+          </a>
+      </div>
+      
+      <div class="scroll-to-top" onclick="scrollToTop()"><iconify-icon icon="solar:round-double-alt-arrow-up-bold-duotone"></iconify-icon></div>
+      
+      <div class="info-box">
+          <div class="footnote">
+              SRUTHIN S <span class="highlight">&copy;2023</span>
+          </div>
+      </div>
+  </footer>
+  <div class="scroll-to-up" onclick="scrollToTop()" ><iconify-icon icon="solar:round-double-alt-arrow-up-bold-duotone"></iconify-icon></div>
+  <!-- Include your other scripts -->
+  <script>
+      function scrollToTop() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+</body>
+</html>
