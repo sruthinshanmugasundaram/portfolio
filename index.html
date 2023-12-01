@@ -21,12 +21,13 @@
 <nav class="homenav-list">
     <ul>
         <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#technical-skills">Technical Skills</a></li>
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#interests">Interests</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact-form">Contact</a></li>
     </ul>
 </nav>
 
@@ -38,99 +39,80 @@
 </script>
     </header>
   <main>
-    <div class="skills-wrapper flex row-gt-sm">
-        <!-- Left Side -->
-        <div class="flex flex-50-gt-sm waypoint" style="display: flex;align-items: center;justify-content: center;text-align: center;">
-            <div class="profile-image" style="width: 150px; height: 130px; border-radius: 40%; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
-                <img src="sruthin 1.png" alt="Your Name" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            
-              
+    <div class="introduction">
+    <div class="profile-section" style="display: flex; justify-content: center; align-items: center; text-align: justify;">
+        <!-- Profile Image -->
+        <div class="profile-image" style="width: 150px; height: 150px; border-radius: 40%; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+            <img src="SVM08944 a.jpg" alt="Your Name" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        
+        <!-- Introduction -->
+        <div class="profile-info" style="margin-left: 20px;">
             <div class="label bold">Who's this guy?</div>
             <div>
                 I'm a Full-Stack Developer from
                 <a class="highlight" href="https://skill-lync.com/" target="_blank">Skill-lync</a>
                 in Chennai.
                 <br />
-                I have a serious passion for UI effects, animations, and creating intuitive, dynamic user experiences, back-end development and java programming.
+                I have a serious passion for UI effects, animations, and creating intuitive, dynamic user experiences, back-end development, and Java programming.
                 <br />
+                <!-- Link to the contact section -->
                 <span class="page-link highlight" dest="contact">Let's make something special.</span>
             </div>
         </div>
-
-        <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
-            <div class="bar flex">
-                <div class="bar fill" style="width:90%">
-                  <div class="tag bold flex">Core Java</div>
-                </div>
-                <span>90%</span>
-              </div>
-              <div class="bar flex">
-            <div class="bar fill" style="width:90%">
-              <div class="tag bold flex">UI Design</div>
-            </div>
-            <span>90%</span>
-          </div>
-          <div class="bar flex">
-            <div class="bar fill" style="width:90%">
-              <div class="tag bold flex">HTML</div>
-            </div>
-            <span>90%</span>
-          </div>
-          <div class="bar flex">
-            <div class="bar fill" style="width:90%">
-              <div class="tag bold flex">CSS</div>
-            </div>
-            <span>90%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:85%">
-              <div class="tag bold flex">SQL & NoSQL</div>
-            </div>
-            <span>85%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:80%">
-              <div class="tag bold flex">JavaScript</div>
-            </div>
-            <span>80%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:65%">
-              <div class="tag bold flex">Node.js</div>
-            </div>
-            <span>65%</span>
-          </div>
-          
-          
-          <div class="bar flex">
-            <div class="bar fill" style="width:65%">
-              <div class="tag bold flex">Python</div>
-            </div>
-            <span>65%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:50%">
-              <div class="tag bold flex">Reactjs</div>
-            </div>
-            <span>50%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:50%">
-              <div class="tag bold flex">C Language</div>
-            </div>
-            <span>50%</span>
-          </div>
-
-        </div>
-      </div>
     </div>
-  </section>
+</div>
+
+  <section id="education" onclick="toggleEducationDetails()">
+    <h2>Education</h2>
+    <div id="education-details">
+
+    <div class="tab-container">
+        <div class="tab" onclick="openTab('bachelors')">Bachelors</div>
+        <div class="tab" onclick="openTab('hsc')">HSC</div>
+        <div class="tab" onclick="openTab('sslc')">SSLC</div>
+    </div>
+
+    <!-- Bachelors Content -->
+    <div class="tab-content" id="bachelors">
+        <div class="education">
+            <img src="college_image.jpg" alt="College Image">
+            <div class="details">
+                <h3>B.E. Electronics and Communication</h3>
+                <p>Misrimal Navajee Munoth Jain Engineering College, Chennai</p>
+                <p>CGPA: 8.09 | Passed-out year: Aug 2019 – June 2023</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HSC Content -->
+    <div class="tab-content" id="hsc">
+        <div class="education">
+            <img src="school_image.png" alt="School Image">
+            <div class="details">
+                <h3>12th Standard</h3>
+                <p>Lions Matriculation Higher Secondary School, Erode</p>
+                <p>Percentage: 70.80% | Passed-out year: March 2019</p>
+                <p>Subjects: Tamil, English, Mathematics, Physics, Chemistry, Computer Science</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SSLC Content -->
+    <div class="tab-content" id="sslc">
+        <div class="education">
+            <img src="school_image.png" alt="School Image">
+            <div class="details">
+                <h3>10th Standard</h3>
+                <p>Lions Matriculation Higher Secondary School, Erode</p>
+                <p>Percentage: 87.60% | Passed-out year: March 2017</p>
+                <p>Subjects: Tamil, English, Mathematics, Science, Social Science</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
     <!-- Your other sections go here -->
       <section id="projects">
         <h2>Projects</h2>
@@ -380,7 +362,7 @@
         
   
           <section id="miniproject" class="section" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px; border-radius: 8px;">
-            <h3 class="section-title" style="color: #2d3e50; text-align: center; margin-bottom: 15px;">Voice Controlling Robot</h3>
+            <h3>Voice Controlling Robot</h3>
             
             <p class="section-description" style="line-height: 1.6; color: #34495e; margin-bottom: 20px;text-align: justify;">
                 Embark on an interactive journey with our innovative "Voice Controlling Robot" project, crafted during the mini project period from March to May 2022 at MNMJEC. This project introduces the revolutionary Burnon app, connecting an Arduino board and Python language, compiled by Proteus software. The app provides an intuitive interface for controlling the robot through voice commands, exploring the future of human-machine interaction with this cutting-edge mini project.
@@ -427,7 +409,7 @@
   
         <section id="internproject" class="section">
           <!-- Content for Intern-projects section -->
-          <h2>Intern-projects</h2>
+          <h2 style="color: black;">Intern-projects</h2>
           <p style="text-align: justify;">Embark on a journey of technological exploration through our intern projects, where innovation meets practical application. These projects showcase the ingenuity and dedication of our interns in tackling real-world challenges and contributing to advancements in robotics and smart city solutions.</p>
       
           <!-- Obstacles Avoiding Robots Project -->
@@ -547,7 +529,13 @@
                   <div class="waypoint">
                       <img src="core_java_logo.jpeg" alt="Core Java Logo" class="me">
                       <h3 class="label">Core Java</h3>
-                      <p>Expert in Core Java programming, with a focus on robust and scalable applications. Proficient in backend development and standalone applications.</p>
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:90%">
+                          <div class="tag bold flex">Core Java 90%</div>
+                        </div>
+                        
+                      </div>
+                      <p>Expert in Core Java, specializing in robust and scalable application development. Proficient in backend development, creating standalone applications for diverse business needs. Skilled in API integration for enhanced functionality and seamless communication. Experienced in optimizing code efficiency and improving application performance with Java's powerful features. Committed to staying updated and incorporating best practices for high-quality software solutions.</p>
                   </div>
               </div>
       
@@ -555,7 +543,35 @@
                   <div class="waypoint">
                       <img src="full_stack_logo.png" alt="Full-Stack Developer Logo" class="me">
                       <h3 class="label">Full-Stack Developer</h3>
-                      <p>Versatile Full-Stack Developer skilled in frontend and backend technologies. Experienced in designing end-to-end solutions, ensuring seamless user experiences and efficient server-side operations.</p>
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:90%">
+                          <div class="tag bold flex">HTML         90%</div>
+                        </div>
+                      </div>
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:90%">
+                          <div class="tag bold flex">CSS         90%</div>
+                        </div>
+                      </div>
+            
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:85%">
+                          <div class="tag bold flex">SQL & NoSQL   85%</div>
+                        </div>
+                      </div>
+            
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:80%">
+                          <div class="tag bold flex">JavaScript    80%</div>
+                        </div>
+                      </div>
+            
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:65%">
+                          <div class="tag bold flex">Node.js   65%</div>
+                        </div>
+                      </div>
+                      <p>Adaptable Full-Stack Developer proficient in both frontend and backend technologies. Skilled in crafting comprehensive solutions for seamless user experiences and optimizing server-side operations.</p>
                   </div>
               </div>
       
@@ -563,6 +579,11 @@
                   <div class="waypoint">
                       <img src="python_logo.jpg" alt="Python Logo" class="me">
                       <h3 class="label">Python Language</h3>
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:65%">
+                          <div class="tag bold flex">Python 65%</div>
+                        </div>
+                      </div>
                       <p>Proficient in Python programming, focusing on web development, automation, and data analysis. Experience with Python frameworks like Django and Flask for scalable applications.</p>
                   </div>
               </div>
@@ -571,6 +592,11 @@
                   <div class="waypoint">
                       <img src="c_language_logo.png" alt="C Language Logo" class="me">
                       <h3 class="label">C Language</h3>
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:50%">
+                          <div class="tag bold flex">C Language  50%</div>
+                        </div>
+                      </div>
                       <p>Strong foundation in C programming, specializing in system-level programming and algorithm design. Experience in creating efficient solutions for various applications.</p>
                   </div>
               </div>
@@ -579,6 +605,11 @@
                   <div class="waypoint">
                       <img src="embedded_programming_logo.jpg" alt="Embedded Programming Logo" class="me">
                       <h3 class="label">Embedded Programming</h3>
+                      <div class="bar flex">
+                        <div class="bar fill" style="width:50%">
+                          <div class="tag bold flex">Embedded System 50%</div>
+                        </div>
+                      </div>
                       <p>Expert in embedded systems programming, ensuring seamless integration of software with hardware. Experience in developing firmware for embedded devices, optimizing performance in resource-constrained environments.</p>
                   </div>
               </div>
@@ -586,7 +617,12 @@
                 <div class="waypoint">
                     <img src="machine_learning_logo.jpg" alt="Machine Learning Logo" class="me">
                     <h3 class="label">Machine Learning</h3>
-                    <p>Proficient in machine learning, a field of artificial intelligence that focuses on developing algorithms and models that enable computers to learn from data and make predictions or decisions. Skilled in data preprocessing, feature engineering, and training various machine learning models.</p>
+                    <div class="bar flex">
+                        <div class="bar fill" style="width:50%">
+                          <div class="tag bold flex">Machine Learning 50% </div>
+                        </div>
+                      </div>
+                    <p>Proficient in machine learning, an AI field developing algorithms enabling computers to learn from data, make predictions, and skilled in data preprocessing, feature engineering, and model training.</p>
                 </div>
             </div>
            
@@ -629,7 +665,7 @@
     <h3 id="python-programming">Python Programming</h3>
     <div class="certificate-images">
         <div class="certificate-image python">
-            <img src="python.png" alt="Python for Data Science Certificate">
+            <img src="python.png" alt="Python for Data Science Certificate"style="display: block; margin: 0 auto;">
             <p class="label">Python for Data Science - NPTEL</p>
         </div>
         <div class="certificate-image python-internshalla">
@@ -727,55 +763,7 @@
 
 
 
-    <section id="education" onclick="toggleEducationDetails()">
-      <h2>Education</h2>
-      <div id="education-details">
-  
-      <div class="tab-container">
-          <div class="tab" onclick="openTab('bachelors')">Bachelors</div>
-          <div class="tab" onclick="openTab('hsc')">HSC</div>
-          <div class="tab" onclick="openTab('sslc')">SSLC</div>
-      </div>
-  
-      <!-- Bachelors Content -->
-      <div class="tab-content" id="bachelors">
-          <div class="education">
-              <img src="college_image.jpg" alt="College Image">
-              <div class="details">
-                  <h3>B.E. Electronics and Communication</h3>
-                  <p>Misrimal Navajee Munoth Jain Engineering College, Chennai</p>
-                  <p>CGPA: 8.09 | Passed-out year: Aug 2019 – June 2023</p>
-              </div>
-          </div>
-      </div>
-  
-      <!-- HSC Content -->
-      <div class="tab-content" id="hsc">
-          <div class="education">
-              <img src="school_image.png" alt="School Image">
-              <div class="details">
-                  <h3>12th Standard</h3>
-                  <p>Lions Matriculation Higher Secondary School, Erode</p>
-                  <p>Percentage: 70.80% | Passed-out year: March 2019</p>
-                  <p>Subjects: Tamil, English, Mathematics, Physics, Chemistry, Computer Science</p>
-              </div>
-          </div>
-      </div>
-  
-      <!-- SSLC Content -->
-      <div class="tab-content" id="sslc">
-          <div class="education">
-              <img src="school_image.png" alt="School Image">
-              <div class="details">
-                  <h3>10th Standard</h3>
-                  <p>Lions Matriculation Higher Secondary School, Erode</p>
-                  <p>Percentage: 87.60% | Passed-out year: March 2017</p>
-                  <p>Subjects: Tamil, English, Mathematics, Science, Social Science</p>
-              </div>
-          </div>
-      </div>
-      </div>
-  </section>
+    
   
 
     <script src="script.js"></script>
@@ -821,7 +809,7 @@
   
     </section>
 
-    <section class="contactform">
+    <section class="contactform" id="contact-form">
       <h2>Contact Form</h2>
       <form id="recruiterForm">
           <label for="companyName">Company Name:</label>
@@ -845,9 +833,9 @@
                 <iconify-icon icon="circum:linkedin"></iconify-icon>
               </div>
           </a>
-          <a href="https://www.facebook.com/matthew.williams.351">
+          <a href="https://www.google.com/maps/place/%E0%AE%B5%E0%AE%BF%E0%AE%A9%E0%AE%BE%E0%AE%AF%E0%AE%95%E0%AE%B0%E0%AF%8D+%E0%AE%95%E0%AF%8B%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%B3%E0%AF%8D%E0%AE%B3%E0%AE%95%E0%AE%B5%E0%AF%81%E0%AE%A3%E0%AF%8D%E0%AE%9F%E0%AE%A9%E0%AF%8D%E0%AE%B5%E0%AE%B2%E0%AE%9A%E0%AF%81/@11.2251753,77.7284756,17.41z/data=!4m15!1m8!3m7!1s0x3ba9707b8570d57d:0xe737cb55121dfddc!2sPalanigoundanvalasu,+Tamil+Nadu+638115!3b1!8m2!3d11.2304197!4d77.7373396!16s%2Fg%2F1tmxc_l5!3m5!1s0x3ba971b70ee778a3:0x319b9c2013b196a0!8m2!3d11.2240741!4d77.7326431!16s%2Fg%2F11gvzc0z8m?entry=ttu">
               <div class="flex icon" id="icon-3">
-                <iconify-icon icon="ant-design:facebook-outlined"></iconify-icon>
+                <iconify-icon icon="subway:location-3"></iconify-icon>
               </div>
           </a>
           <a href="https://github.com/sruthinshanmugasundaram/Full-Stack-development-projects">
