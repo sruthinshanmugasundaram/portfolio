@@ -76,19 +76,6 @@ if (initialTab) {
 
 
 
-//certificates
-document.addEventListener('DOMContentLoaded', function () {
-    const certificatesSection = document.getElementById('certificates');
-    const navMenu = document.querySelector('.nav-menu');
-    const certificateImages = certificatesSection.querySelector('.certificate-images');
-  
-    certificatesSection.addEventListener('click', function () {
-      certificatesSection.classList.toggle('active');
-    });
-  });
-  
-
-
   //education details
   function openTab(tabName) {
     // Hide all tab contents
